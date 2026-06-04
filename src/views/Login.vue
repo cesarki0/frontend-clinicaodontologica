@@ -92,7 +92,7 @@ onMounted(() => {
 })
 
 const login = () => {
-  axios.post('/login', { email: email.value, password: password.value }, { withCredentials: true })
+  axios.post('/login', { email: email.value, password: password.value })
     .then(res => {
       if (res.data.success) {
         localStorage.setItem('token', res.data.token)
