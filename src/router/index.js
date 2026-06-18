@@ -8,11 +8,17 @@ import Odontograma from '../views/Odontograma.vue'
 import Login from '../views/Login.vue'
 import PacientesCitas from '../views/PacientesCitas.vue'
 import Dashboard from '@/views/Dashboard.vue'
+import Clientes from '@/views/Clientes.vue'
+import Usuarios from '@/views/Usuarios.vue'
+import Roles from '@/views/Roles.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     { path: '/', redirect: '/login' },
+      { path: '/users', name: 'Usuarios', component: Usuarios },
+    { path: '/clientes', name: 'Clientes', component: Clientes },
+        { path: '/roles', name: 'Roles', component: Roles },
     { path: '/pacientes', name: 'pacientes', component: Pacientes },
     { path: '/citas', name: 'citas', component: Citas },
     { path: '/tratamientos', name: 'tratamientos', component: Tratamientos },

@@ -93,7 +93,7 @@ onMounted(() => {
 
 const login = () => {
 
-  console.log(axios.defaults.baseURL);
+  //console.log(axios.defaults.baseURL);
   axios.post('/login', { email: email.value, password: password.value })
   
     .then(res => {

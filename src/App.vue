@@ -78,6 +78,25 @@ const logout = async () => {
           </router-link>
         </CNavItem>
 
+
+            <CNavItem>
+          <router-link to="/users" class="nav-link">
+            <CIcon :icon="cilUser" class="nav-icon" /> Usuarios
+          </router-link>
+        </CNavItem>
+
+         <CNavItem>
+          <router-link to="/roles" class="nav-link">
+            <CIcon :icon="cilUser" class="nav-icon" /> Roles
+          </router-link>
+        </CNavItem>
+
+        <CNavItem>
+          <router-link to="/clientes" class="nav-link">
+            <CIcon :icon="cilUser" class="nav-icon" /> Clinicas
+          </router-link>
+        </CNavItem>
+
         <CNavItem>
           <router-link to="/pacientes" class="nav-link">
             <CIcon :icon="cilUser" class="nav-icon" /> Pacientes
